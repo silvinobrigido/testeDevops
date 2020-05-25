@@ -1,15 +1,8 @@
 steps:
-- name: gcr.io/cloud-builders/gcloud
-# Install
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['install']
-# Test/Build
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'test:unit']
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'build']
-# Deploy
-# - name: 'gcr.io/$PROJECT_ID/firebase'
-#   args: ['deploy']
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'deploy']
+- name: "gcr.io/cloud-builders/npm"
+  args: ["install"]
+- name: "gcr.io/cloud-builders/npm"
+  args: ["run", "build"]
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
