@@ -2,7 +2,3 @@ steps:
 # Install
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
-# Test
-# Deploy
-- name: 'gcr.io/arcane-mason-171202/firebase'
-  args: ['deploy']
