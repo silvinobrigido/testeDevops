@@ -13,7 +13,7 @@ export class Tab1Page implements OnInit, AfterContentInit {
   }
 
   ngOnInit(): void {
-    const position = new google.maps.LatLng(-21.763409, -43.349034);
+    /*const position = new google.maps.LatLng(-21.763409, -43.349034);
 
     const mapOptions = {
       zoom: 18,
@@ -28,7 +28,7 @@ export class Tab1Page implements OnInit, AfterContentInit {
       position: position,
       map: this.map,
       animation: google.maps.Animation.DROP
-    });
+    });*/
   }
  
 
